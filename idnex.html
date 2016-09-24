@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>viewport</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleForSlider.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
+    <script language="javascript" type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var buttons = {
+            previous: $('#lofslidecontent45 .lof-previous'),
+            next: $('#lofslidecontent45 .lof-next')
+        };
+
+        $obj = $('#lofslidecontent45').lofJSidernews({
+            interval: 4000,
+            direction: 'opacitys',
+            easing: 'easeInOutExpo',
+            duration: 600,
+            auto: false,
+            maxItemDisplay: 6,
+            navPosition: 'horizontal', // horizontal
+            navigatorHeight: 56,
+            navigatorWidth: 94,
+            mainWidth: 930,
+            buttons: buttons
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div>
+        <header class="header row">
+            <div class="header-navigation ">
+                <div class="content-width">
+                    <span class="data"><script src="js/data.js"></script></span>
+                    <ul class="dropdown">
+                        <li class="dropdown-top"><a href="#" class="dropdown-top">Sample Page</a>
+                            <ul class="header-sub-menu">
+                                <li><a href="#">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="header-sub-menu-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top "><a href="#" class="dropdown-top">Page Layouts</a>
+                            <ul class="header-sub-menu">
+                                <li><a href="#">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="header-sub-menu-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top"><a href="#" class="dropdown-top">Page Templates</a>
+                            <ul class="header-sub-menu">
+                                <li><a href="#">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="header-sub-menu-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top"><a href="#" class="dropdown-top">Theme colors</a>
+                            <ul class="header-sub-menu">
+                                <li><a href="#">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="header-sub-menu-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="#" class=" border-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wrapper-logo-banner row">
+                <div class="content-width">
+                    <div class="logo-text1">Viewport <span class="logo-text2"> <b> |</b>  Your tagline Here.</span></div>
+                    <div class="banner">468x60</div>
+                </div>
+            </div>
+
+            <div class="content-width">
+                <nav class="block-nav">
+                    <ul class="dropdown-nav">
+                        <li class="dropdown-top-nav"><a href="#" class="dropdown-top-nav a-nav"><span class="text-nav1">World News</span> <br> <span class="text-nav2">From Around The Globe</span></a>
+                            <ul class="sub-menu-nav">
+                                <li><a href="#" class="sub-menu-nav-first-link">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="sub-menu-nav-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top-nav"><a href="#" class="dropdown-top-nav a-nav"><span class="text-nav1">Celebrity News</span> <br> <span class="text-nav2">Jucy Hollywood Gossip</span></a>
+                            <ul class="sub-menu-nav">
+                                <li><a href="#" class="sub-menu-nav-first-link">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="sub-menu-nav-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top-nav"><a href="#" class="dropdown-top-nav a-nav"><span class="text-nav1">Technology</span> <br> <span class="text-nav2">Apps, Internet & Gagets</span></a>
+                            <ul class="sub-menu-nav">
+                                <li><a href="#" class="sub-menu-nav-first-link">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="sub-menu-nav-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top-nav"><a href="#" class="dropdown-top-nav a-nav"><span class="text-nav1">Lifestyle Tips</span> <br> <span class="text-nav2">Your Health & Happiness</span></a>
+                            <ul class="sub-menu-nav">
+                                <li><a href="#" class="sub-menu-nav-first-link">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="sub-menu-nav-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top-nav"><a href="#" class="dropdown-top-nav a-nav"><span class="text-nav1">Entartainmant </span><br> <span class="text-nav2">Muvies, Music & Reviews</span></a>
+                            <ul class="sub-menu-nav">
+                                <li><a href="#" class="sub-menu-nav-first-link">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="sub-menu-nav-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-top-nav  none-psevdo-li-nav"><a href="#" class="dropdown-top-nav a-nav"><span class="text-nav1">Treval News </span> <br> <span class="text-nav2">Travel News, Guides & Tips</span></a>
+                            <ul class="sub-menu-nav">
+                                <li><a href="#" class="sub-menu-nav-first-link">Blog Page</a></li>
+                                <li><a href="#">Archive Page</a></li>
+                                <li><a href="#">Full Width Page</a></li>
+                                <li><a href="#" class="sub-menu-nav-last-link">Contact Page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="bacground-main1"></div>
+            </div>
+
+        </header>
+
+        <!------------------------------------- THE CONTENT ------------------------------------------------->
+        <div class="main row">
+            <div class="slider-container">
+                <div class="content-width">
+                    <div class="Shape-10"></div>
+                    <div id="lofslidecontent45" class="lof-slidecontent">
+                        <div class="preload">
+                            <div></div>
+                        </div>
+                        <!-- MAIN CONTENT -->
+                        <div class="lof-main-outer" style="width:930px; height:300px; border-radius: 4px;">
+                            <ul class="lof-main-wapper">
+                                <li>
+                                    <img src="images/img/1.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/img/2.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/img/3.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/img/4.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/img/5.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/img/6.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/img/7.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/img/8.jpg" title="">
+                                    <div class="lof-main-item-desc">
+                                        <h2>Silicon Valley Shows Signs of a New Dot-Com Deal Frenzy</h2> 
+                                        <span> By <a href="#" title="Orman Clark" class="lof-main-item-desc-link">Orman Clark</a> on 4th Dec 2016 <a  href="#" class="lof-main-item-desc-link1">22 Comments</a></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END MAIN CONTENT -->
+                        <!-- NAVIGATOR -->
+                        <div class="lof-navigator-wapper">
+                            <div onclick="return false" href="" class="lof-next">Next</div>
+                            <div class="lof-navigator-outer">
+                                <ul class="lof-navigator">
+                                    <li><img src="images/img/1.1.jpg" /></li>
+                                    <li><img src="images/img/2.jpg" /></li>
+                                    <li><img src="images/img/3.jpg" /></li>
+                                    <li><img src="images/img/4.jpg" /></li>
+                                    <li><img src="images/img/5.jpg" /></li>
+                                    <li><img src="images/img/6.jpg" /></li>
+                                    <li><img src="images/img/7.jpg" /></li>
+                                    <li><img src="images/img/8.jpg" /></li>
+                                </ul>
+                            </div>
+                            <div onclick="return false" href="" class="lof-previous">Previous</div>
+                        </div>
+                    </div>
+                    <div class="background-style-block"></div>
+                </div>
+            </div>
+            <div class="rear-content-width row">
+            <div class="content-width row bg-main">
+                
+                <div class="wrapper-content-left">
+                    <div class="technology-wrapper">
+                    <div class="technology-title-wrapper">
+                        <h3>Technology</h3></div>
+                    <a href="#"><img src="images/img/technology1.jpg"></a>
+                    <div class="tetechnology-box-content">
+                        <h4> <a href="#">Silicon Valley Shows of Dot-Com Frenzy</a></h4>
+                        <p> <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span> </p>
+                        <br>
+                        <p> Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+                    </div>
+                    <div class="tetechnology-box-content">
+                        <img src="images/img/trechnology-contnt-box.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                    <div class="tetechnology-box-content">
+                        <img src="images/img/trechnology-contnt-box1.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                </div>
+                <div class="entertaiment-wrapper">
+                    <div class="entertaiment-title-wrapper">
+                        <h3>Entertaiment</h3>
+                    </div>
+                    <a href="#"><img src="images/img/Entertainment1.jpg"></a>
+                    <div class="entertaiment-box-content">
+                        <h4> <a href="#">Silicon Valley Shows of Dot-Com Frenzy</a></h4>
+                        <p> <span class="box-content-data">August 4 2016, <a href="#" class="comments" >8 Comments</a></span> </p>
+                        <br>
+                        <p> Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+                    </div>
+                    <div class="entertaiment-box-content">
+                        <img src="images/img/trechnology-contnt-box2.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                    <div class="entertaiment-box-content">
+                        <img src="images/img/trechnology-contnt-box3.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                </div>
+                <div class="technology-wrapper ">
+                    <div class="technology-title-wrapper">
+                        <h3>Technology</h3></div>
+                    <a href="#"><img src="images/img/technology.jpg"></a>
+                    <div class="tetechnology-box-content">
+                        <h4> <a href="#">Silicon Valley Shows of Dot-Com Frenzy</a></h4>
+                        <p> <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span> </p>
+                        <br>
+                        <p> Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+                    </div>
+                    <div class="tetechnology-box-content">
+                        <img src="images/img/trechnology-contnt-box2.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                    <div class="tetechnology-box-content">
+                        <img src="images/img/trechnology-contnt-box3.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                </div>
+                <div class="entertaiment-wrapper ">
+                    <div class="entertaiment-title-wrapper">
+                        <h3>Entertaiment</h3>
+                    </div>
+                    <a href="#"><img src="images/img/Entertaiment.jpg"></a>
+                    <div class="entertaiment-box-content">
+                        <h4> <a href="#">Silicon Valley Shows of Dot-Com Frenzy</a></h4>
+                        <p> <span class="box-content-data">August 4 2016, <a href="#" class="comments" >8 Comments</a></span> </p>
+                        <br>
+                        <p> Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+                    </div>
+                    <div class="entertaiment-box-content">
+                        <img src="images/img/trechnology-contnt-box.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                    <div class="entertaiment-box-content">
+                        <img src="images/img/trechnology-contnt-box1.jpg">
+                        <p> Fly Fishers Serving as Transports for Noxious Little Invaders
+                            <br>
+                            <span class="box-content-data">August 4 2016, <a href="#" class="comments">8 Comments</a></span></p>
+                    </div>
+                </div>
+                 <div class="latest-wrapper">
+                    <div class="latest-title-wrapper">
+                        <h3>Latest Posts</h3>
+                    </div>
+                    <div class="latest-box-content">
+                        <img src="images/img/Latest Posts1.jpg">
+                        <h4> <a href="#">Silicon Valley Shows of Dot-Com Frenzy</a></h4>
+                        <p> <span class="box-content-data">August 4 2016, <a href="#" class="comments" >8 Comments</a></span> </p>
+                        <br>
+                        <p> Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+                    </div>
+                    <div class="latest-box-content">
+                        <img src="images/img/Latest Posts2.jpg">
+                        <h4> <a href="#">Silicon Valley Shows of Dot-Com Frenzy</a></h4>
+                        <p> <span class="box-content-data">August 4 2016, <a href="#" class="comments" >8 Comments</a></span> </p>
+                        <br>
+                        <p> Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+                    </div>
+                    <div class="latest-box-content">
+                        <img src="images/img/Latest Posts3.jpg">
+                        <h4> <a href="#">Silicon Valley Shows of Dot-Com Frenzy</a></h4>
+                        <p> <span class="box-content-data">August 4 2016, <a href="#" class="comments" >8 Comments</a></span> </p>
+                        <br>
+                        <p> Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+                    </div>
+                </div>
+                </div>
+                <div class="colum-separator"></div>
+                <div class="wrapper-content-right">
+                    <div class="search-line-wrapper">
+                    <form>
+                        <input type="search" name="q" placeholder="to search, type and hit enter">
+                    </form>
+                </div>
+                <div class="advertisement-wrapper">
+                    <div class="advertisement-title-wrapper">
+                        <h3>Advertisement</h3></div>
+                    <div class="advertisement-box-content"> 300 x 250</div>
+                </div>
+                <div class="sponsors-wrapper row">
+                    <div class="sponsors-title-wrapper">
+                        <h3>Sponsors</h3></div>
+                    <div class="sponsors-box-content1-wrapper">
+                        <a href="#">
+                            <div class="sponsors-box-content1">125 x 125</div>
+                        </a>
+                    </div>
+                    <div class="sponsors-box-content2-wrapper">
+                        <a href="#">
+                            <div class="sponsors-box-content2">125 x 125</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-wrapper">
+                    <div class="featured-title-wrapper">
+                        <h3>Featured Vidio</h3></div>
+                    <div class="featured-box-content">
+                        <iframe width="300" height="225" src="http://www.youtube.com/embed/DkaUsBwe0fo" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="twitter-wrapper">
+                    <div class="twitter-title-wrapper">
+                        <h3>Twitter</h3>
+                    </div>
+                    <div class="twitter-box-content">
+                        <p> Genesis Child Themes at Theme Garden December 5th --> <a href="#" class="twitter-box-link">http://bit.ly/ibXdjY <span class="heshteg" > #genesiswp </span><span class="heshteg" > #themegarden</span></a>
+                            <br> <a href="#" class="twitter-box-link-time">31 minutes ago</a></p>
+                    </div>
+                    <div class="twitter-box-content">
+                        <p>PhotoPro Genesis Child Theme by Creativity Included Launches at <a href="#" class="twitter-box-link">http://bit.ly/9fGbq0 - http://eepurl.com/bQeQn</a>
+                            <br> <a href="#" class="twitter-box-link-time">31 minutes ago</a></p>
+                    </div>
+                    <div class="twitter-box-content">
+                        <p> Latest: Genesis Child Themes at Theme Garden – December 5th - Many of you are aware that Jason Schuller of Press75 r...<a href="#" class="twitter-box-link">http://ht.ly/1akn8s</a>
+                            <br> <a href="#" class="twitter-box-link-time">31 minutes ago</a></p>
+                    </div>
+                    <div class="twitter-box-content">
+                        <p> The Rockstar Guide to Getting More Traffic, Fame, and Success --> <a href="#" class="twitter-box-link">http://bit.ly/hCzF69 </a>
+                            <br> <a href="#" class="twitter-box-link-time">31 minutes ago</a></p>
+                    </div>
+                </div>
+                <div class="recent-wrapper">
+                    <div class="recent-title-wrapper">
+                        <h3>Recent Posts</h3>
+                    </div>
+                    <div class="recent-box-content">
+                        <p><a href="#" class="recent-box-link"> Use Prose to Put the Focus on Your Words </a></p>
+                    </div>
+                    <div class="recent-box-content">
+                        <p><a href="#" class="recent-box-link">Images Add Life to Your Site</a></p>
+                    </div>
+                    <div class="recent-box-content">
+                        <p> <a href="#" class="recent-box-link"> What’s a Framework and Why Do I Need One?</a></p>
+                    </div>
+                    <div class="recent-box-content">
+                        <p><a href="#" class="recent-box-link">7 Tips for Capturing Short Attention Spans</a></p>
+                    </div>
+                    <div class="recent-box-content">
+                        <p><a href="#" class="recent-box-link">Making Your Blog a Great Place to Hang Out</a></p>
+                    </div>
+                </div>
+                </div>  
+            </div>
+            </div>
+		</div>
+
+
+
+
+
+        <footer>
+        <div class="background4" >
+        <div class="content-width bg-main">
+            <a href="#" class="Back-to-top-link  ">
+                    <div class="Back-to-top-wrapper ">
+                        <div class="Back-to-top-box-text">Back to top
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="bottom-content-wrapper">
+                    <div class="bottom-recent-wrapper">
+                    <div class="bottom-recent-title-wrapper">
+                        <h3>Recent Posts</h3>
+                    </div>
+                    <div class="bottom-recent-box-content">
+                        <p><a href="#" class="bottom-recent-box-link"> Use Prose to Put the Focus on Your Words </a></p>
+                    </div>
+                    <div class="bottom-recent-box-content">
+                        <p><a href="#" class="bottom-recent-box-link">Images Add Life to Your Site</a></p>
+                    </div>
+                    <div class="bottom-recent-box-content">
+                        <p> <a href="#" class="bottom-recent-box-link"> What a WordPress theme Framework?</a></p>
+                    </div>
+                    <div class="bottom-recent-box-content">
+                        <p><a href="#" class="bottom-recent-box-link">7 Tips for Capturing Short Attention Spans</a></p>
+                    </div>
+                    <div class="bottom-recent-box-content">
+                        <p><a href="#" class="bottom-recent-box-link">Making Your Blog a Great Place to Hang Out</a></p>
+                    </div>
+                </div>
+                <div class="about-wrapper">
+                    <div class="about-title-wrapper">
+                        <h3>About Viewport</h3>
+                    </div>
+                    <div class="about-box-content">
+                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p> <br>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p><br>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p><br>
+                    </div>
+                </div>
+                <div class="сomments-wrapper">
+                    <div class="сomments-title-wrapper">
+                        <h3>Comments</h3>
+                    </div>
+                    <div class="сomments-box-content">
+                        <p>Orman Clark on <a href="#" class="сomments-box-link">Sample Post With Threaded Comments</a></p>
+                    </div>
+                    <div class="сomments-box-content">
+                        <p>Orman Clark on <a href="#" class="сomments-box-link">Sample Post With Threaded Comments</a></p>
+                    </div>
+                    <div class="сomments-box-content">
+                        <p>Orman Clark on <a href="#" class="сomments-box-link">Sample Post With Threaded Comments</a></p>
+                    </div>
+                    <div class="сomments-box-content">
+                        <p>Orman Clark on <a href="#" class="сomments-box-link">Sample Post With Threaded Comments</a></p>
+                    </div>
+                </div>
+                <div class="viewport-bottom">
+                    <h1>Viewport</h1>
+                    <p > Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer </p>
+                </div>
+
+              </div>
+            </div>
+  <div class="footer-wrapper row" >
+  <div class="content-width">
+  	<div class="footer-content-left"> <span class="footer-content-text" >Copyright © 2016 · All Rights Reserved</span></div>
+
+  	<div class="footer-content-right"><span class="footer-content-text" >Viewport Theme by Orman Clark · <span class="footer-content-text1"> WordPress · Log in</span></span></div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
