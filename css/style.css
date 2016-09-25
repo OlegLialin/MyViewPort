@@ -31,6 +31,28 @@ img {
     max-width: 100%;
     height: auto;
 }
+.shadow-main{
+    position: relative;
+}
+.shadow-main:after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 2200px;
+    box-shadow: 5px -3px 3px -5px rgba(0,0,0,0.4);
+    top: 0px;
+    right: 0px
+}
+.shadow-main:before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 2200px;
+    box-shadow: -4px -3px 3px -4px rgba(0,0,0,0.4);
+    top: 0px;
+    left: : 0px
+}
+
 
 .header {
     width: 100%;
